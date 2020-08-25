@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<style>
+    tr {
+        text-align: left;
+    }
+
+    #cn {
+        text-align: center;
+    }
+
+    .gr {
+        text-align: center;
+        background-color: aquamarine;
+    }
+
+    table {
+    }
+</style>
+
+<body>
+    <table border="2">
+        <tr>
+            <th id="cn" class="gr">Name</th>
+            <th id="cn" class="gr">Values</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td><input type="radio" name="hi">Male<br>
+                <input type="radio" name="hi">Female</td>
+        </tr>
+        <tr>
+            <td>Eye color</td>
+            <td><select name="nm" id="">
+                    <option value="">Green</option>
+                    <option value="">Red</option>
+                    <option value="">Yellow</option>
+
+                </select></td>
+        </tr>
+        <tr>
+            <td>Check all that apply</td>
+            <td><input type="checkbox">Over 6 feat tall<br>
+                <input type="checkbox">Over 200 pounds</td>
+        </tr>
+        <tr>
+            <th class="gr" colspan="2">Describe your ability</th>
+        </tr>
+        <tr>
+            <th colspan="2"><textarea name="dam" id="" cols="45" rows="10"></textarea></th>
+        </tr>
+        <tr>
+            <th class="gr" colspan="2"><input type="button" value="enter my information"></th>
+        </tr>
+    </table>
+</body>
+
+</html>
