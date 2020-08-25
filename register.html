@@ -7,60 +7,68 @@
     <title>register</title>
 </head>
 <style>
-    tr {
+    body {
+        text-transform: capitalize;
+    }
+
+    .dr {
+        /* margin-left: 190px; */
+        margin-bottom: -20px;
+        text-align: right;
+    }
+
+    h4 {
+        margin-top: 30px;
+        background-color: green;
+        padding: 10px;
+        color: white;
         text-align: left;
     }
 
-    #cn {
-        text-align: center;
+    #smd {
+        width: 10%;
     }
 
-    .gr {
-        text-align: center;
-        background-color: aquamarine;
+    input {
+        width: 40%;
     }
 
-    table {
+
+    h1 {
+        text-align: left;
+    }
+    #agr{
+        margin-right: -70px;
     }
 </style>
 
 <body>
-    <table border="2">
+    <table border="2" style="width: 500px;">
         <tr>
-            <th id="cn" class="gr">Name</th>
-            <th id="cn" class="gr">Values</th>
-        </tr>
-        <tr>
-            <td>Name</td>
-            <td><input type="text"></td>
-        </tr>
-        <tr>
-            <td>Gender</td>
-            <td><input type="radio" name="hi">Male<br>
-                <input type="radio" name="hi">Female</td>
-        </tr>
-        <tr>
-            <td>Eye color</td>
-            <td><select name="nm" id="">
-                    <option value="">Green</option>
-                    <option value="">Red</option>
-                    <option value="">Yellow</option>
+            <th>
+                <h1>race registration</h1>
+                <div class="drp">
+                    <p class="dr"> <u> race map</u></p>
+                    <p class="dr"> <u> video from previous year</u></p>
+                    <p class="dr"> <u> contact to oraganizer</u></p>
+                </div>
+                <h4>Racer data</h4>
 
-                </select></td>
-        </tr>
-        <tr>
-            <td>Check all that apply</td>
-            <td><input type="checkbox">Over 6 feat tall<br>
-                <input type="checkbox">Over 200 pounds</td>
-        </tr>
-        <tr>
-            <th class="gr" colspan="2">Describe your ability</th>
-        </tr>
-        <tr>
-            <th colspan="2"><textarea name="dam" id="" cols="45" rows="10"></textarea></th>
-        </tr>
-        <tr>
-            <th class="gr" colspan="2"><input type="button" value="enter my information"></th>
+                <form action="#">
+                    &ensp; &emsp; NAME:<input type="text"><br><br>
+                    SURNAME:<input type="text"><br><br>
+                    &emsp; &emsp; DATE:<input type="date"><br><br>
+                    &ensp; ADDRESS:<input type="text"><br><br>
+                    &emsp; &emsp; &emsp; &emsp; &emsp; 
+                    IAM:<input type="radio" name="rd">ametur
+                    <input type="radio" name="rd" >proffesional by section<br><br>
+                    &emsp; &emsp; PHNO:<input type="number"><br><br>
+                    &emsp; &ensp; EMAIL:<input type="email"><br><br>
+                    race term agreement <input id="agr" type="checkbox"><br><br>
+                    <input type="button" value="register"><br>
+                </form>
+
+            </th>
         </tr>
     </table>
 </body>
